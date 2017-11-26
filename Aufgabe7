@@ -1,0 +1,42 @@
+public class RobotAdapter implements Spieler {
+	
+	private Robot Robot;
+	
+	public RobotAdapter(Robot Robot) {
+		super();
+		this.Robot = Robot;
+	}
+	
+	@Override
+	public int geheNachLinks(int a) {
+		int neuePosition = (int) (Robot.getX() - a);
+		return neuePosition;
+	}
+
+	@Override
+	public int geheNachRechts(int a) {
+		int neuePosition = (int) (Robot.getY() + a);
+		return neuePosition;
+	}
+
+	@Override
+	public int geheNachOben(int a) {
+		int neuePosition = (int) (Robot.getY() + a);
+		return neuePosition;
+	}
+
+	@Override
+	public int geheNachUnten(int a) {
+		int neuePosition = (int) (Robot.getY() - a);
+		return neuePosition;
+	}
+
+	@Override
+	public void rolleNach(double x, double y) {
+		 @SuppressWarnings("unused")
+		double neuePosition = Robot.getX();
+	     @SuppressWarnings("unused")
+		double neuePosition1 = Robot.getY();
+	        return;
+}
+}
